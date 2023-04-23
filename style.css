@@ -1,128 +1,160 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
 
-main {
-    width: 70%;
-    margin: 0 auto;
-    font-family: 'Monterrat', sans-serif;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.content {
-    display: flex;
-    flex-direction: row-reverse;
+.container {
+  width: 70%;
+  margin: 0 auto;
 }
 
-h2 {
-    font-size: 48px;
-    margin: 15px 0;
+header {
+  margin-top: 5.2rem;
+  margin-bottom: 4.3rem;
+}
+h1 {
+  font-size: 4.8rem;
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 1.2rem;
 }
 
-h2,
-h3,
+.intro {
+  font-size: 1.8rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #4f4f4f;
+  width: 70%;
+  padding-left: 0.2rem;
+}
+
+main .image {
+  margin-bottom: 4.8rem;
+}
+main img {
+  max-width: 100%;
+}
+
+article {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.wrapper {
+  width: 55%;
+  margin-bottom: 3.8rem;
+}
+
+.ingredients {
+  margin-bottom: 3.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 h4 {
-    font-family: 'Playfair Display', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 3.2rem;
 }
 
-img {
-    width: 100%;
-    margin: 50px 0;
+input[type="checkbox"] {
+  accent-color: #f2994a;
+  width: 2.1rem;
+  height: 2.1rem;
 }
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: fit-content;
-    padding: 25px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
-    border-radius: 5%;
-}
-
-.card {
-    display: flex;
-    align-items: center;
-    width: max-content;
-}
-
-.material-symbols-outlined {
-    color: orange;
-}
-.card-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 14px;
-}
-
-.card-title {
-    margin-bottom:2px ;
-    font-size: 10px;
-    color: grey;
-}
-
-h4 {
-    font-style: italic;
-    color: grey;
-}
-
 .row {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
 }
 
-.row span {
-    color: orange;
-    margin-right: 5px;
+.row p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 100%;
 }
 
-.createdby {
-    text-align: center;
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  border-radius: 2rem;
+  padding: 4rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+.info-title {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  color: #bdbdbd;
+  margin-bottom: 0.4rem;
+}
 
-@media (max-width:600px) {
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
 
-    main {
-        width: 95%;
-    }
-    .content {
-        display: block
-    }
-    
-    .cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        column-gap: 35px;
-        padding: 10px;
-    }
+.info-value {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+}
 
-    h2 {
-        font-size: 24px;
-        margin: 15px 0;
-    }
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 15rem;
+}
 
-    img {
-        margin: 15px 0;
-    }
+.instructions .row span {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  font-family: "Playfair Display", sans-serif;
+  display: inline-block;
+  color: #fff;
+  background-color: #f2994a;
+  width: 3.6rem;
+  height: 3.6rem;
+  text-align: center;
+  border-radius: 0.6rem;
+}
 
+footer {
+  margin-top: auto;
+}
 
-    .card-title {
-        font-size: 8px;
-        color: grey;
-    }
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  text-align: center;
+  color: #bdbdbd;
+  margin-bottom: 1.6rem;
+}
 
-    .card-text {
-        font-size: 10px;
-    }
-
-    h3 {
-        margin: 15px 0;
-    }
-
-
+.orange {
+  color: #f2994a;
 }
